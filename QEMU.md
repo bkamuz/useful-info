@@ -1,3 +1,5 @@
+![alt text](covers/QEMU.png)
+
 # Tutorial
 This is a quick run-through on how to create and run a virtual Ubuntu 20.04 desktop machine on macOS Catalina using either QEMU 5.1 via Homebrew or QEMU 5.0 via MacPorts. This guide assumes you have familiarity with the command-line, virtual machines, ssh, port-forwarding, and graphical Linux installers.
 
@@ -92,7 +94,6 @@ This is a quick run-through on how to create and run a virtual Ubuntu 20.04 desk
     - Attach the hard-disk created earlier, using virtio drivers.
 <br>
 <br>
-
     The virtio options effectively pass-through directly to the hardware instead of emulating physical devices. Skipping this layer of emulation can significantly improve VM performance.
 
 7. Complete the installation in the virtual machine window which should appear after starting the VM.
