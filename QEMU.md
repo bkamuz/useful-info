@@ -1,4 +1,4 @@
-![QEMU](covers/QEMU.png '{"w":100}')
+![QEMU](covers/QEMU.png)
 
 # Tutorial
 
