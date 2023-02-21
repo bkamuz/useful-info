@@ -126,7 +126,6 @@ It’s a small step away to run the virtual machine headless and access it throu
 
 ### 1. Run the virtual machine headless, forwarding ssh over port 9001 on the host.
 
-    ```
     $ qemu-system-x86_64 \
     -accel hvf \
     -cpu host,-rtdscp \
@@ -138,15 +137,14 @@ It’s a small step away to run the virtual machine headless and access it throu
     -device virtio-net,netdev=vmnic \
     -netdev user,id=vmnic,hostfwd=tcp:127.0.0.1:9001-:22 \
     -drive file=ubuntu2004.qcow2,if=virtio
-    ```
+
 
 ### 2. Enable SSH in the guest OS.
 
 ### 3. ssh into the machine from the host.
 
-    ```
     ssh -p 9001 localhost
-    ```
+
 
 ## Conclusion
 
